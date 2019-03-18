@@ -1,7 +1,7 @@
 # H5页面，这里是公共的代码
 
 > 这是一个Vue项目
-> 项目code.aliyun.com地址为git@code.aliyun.com:maxwell/public-h5A.git
+> 项目地址为git@github.com:Alidce/vue-ali-vux.git
 ## Build Setup
 
 ``` bash
