@@ -1,4 +1,4 @@
-# 机器人登录H5页面，这里是公共的代码
+# H5页面，这里是公共的代码
 
 > 这是一个Vue项目
 > 项目code.aliyun.com地址为git@code.aliyun.com:maxwell/public-h5A.git
@@ -27,13 +27,7 @@ npm run build --report
 --error.vue 此文件相当于404页面
 --index.vue 此组件为tab文件即下方的导航
 --login.vue 此组件为登录页
---register.vue 此组件为注册页面
---resetpsw.vue 此组件为重置密码组件
---robot
----rebotlist.vue此组件为机器人列表组件
----siginrobot.vue此组件为登录机器人组件
 ---me.vue 此组件为个人中心组件
----addgroup.vue 此组件为添加群组件
 #config 
 此文件夹存放接口文件以及项目配置文件
 --api.js
