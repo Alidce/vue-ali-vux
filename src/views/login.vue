@@ -1,15 +1,14 @@
 <template>
   <div class="login">
     <div class="title">
-      <div class="cn">{{this._AppConfig().title.cn}}</div>
-      <div class="zn">{{this._AppConfig().title.zn}}</div>
+      <div class="cn">{{this._APPCONFIG.title.cn}}</div>
+      <div class="zn">{{this._APPCONFIG.title.zn}}</div>
     </div>
     <div class="input_submit">
       <x-button class="submitBtn" @click.native="jump" type="primary">登录</x-button>
     </div>
   </div>
 </template>
-
 <script>
 import { XInput, XButton } from "vux";
 export default {
@@ -27,14 +26,14 @@ export default {
      * 1.获取微信用户的open_id
      */
     sendCode() {
-      let wxcode = this._getCode("code");
+      let wxcode = this._func._getCode("code");
       let req = {
         username: this.username,
         code: wxcode,
         platform_id: this._AppConfig().platform_id
       };
       this.$http.post(this._api.auth.get_openid, req).then(res => {
-        this._Log("get_openid", res.data);
+        this._func._Log("get_openid", res.data);
       });
     },
     /**
@@ -42,7 +41,7 @@ export default {
      */
     jump() {
       if (1) {
-        this._Log("test", "rest");
+        this._func._Log("test", "rest");
       } else {
         this.$vux.toast.text("表单信息不完整", "top");
       }

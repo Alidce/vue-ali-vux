@@ -11,14 +11,16 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/xxx/**':{
-        target: "http://xxx.qunzhu.me",
+        target: "http://xxx.yyy.www",
+        // 这里换成你的域名
         changeOrigin: true,
         pathRewrite: {
           '^/xxx': "/"
         }
       },
       '/xxx/**':{
-        target: "http://xxx.qunzhu.me:12000",
+        target: "http://xxx.yyy.www",
+        // 这里换成你的域名
         changeOrigin: true,
         pathRewrite: {
           '^/xxx': "/"
